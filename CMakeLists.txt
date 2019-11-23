@@ -1,0 +1,13 @@
+cmake_minimum_required( VERSION 3.10.0 )
+
+project ( w-encode CXX C )
+set ( CMAKE_CXX_STANDARD 17 )
+
+add_subdirectory( "ascii85" )
+add_subdirectory( "alpha71" )
+add_subdirectory( "test" )
+
+enable_testing ()
+add_test( NAME test-asci COMMAND test/test_asci )
+add_test( NAME test-alpha COMMAND test/test_alpha )
+
