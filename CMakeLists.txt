@@ -23,6 +23,6 @@ add_subdirectory( "alpha71" )
 add_subdirectory( "test" )
 
 enable_testing ()
-add_test( NAME test-asci COMMAND test/test_asci )
+add_test( NAME test-ascii COMMAND test/test_asci )
 add_test( NAME test-alpha COMMAND test/test_alpha )
 

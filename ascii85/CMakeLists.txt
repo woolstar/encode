@@ -11,4 +11,3 @@ target_include_directories( encode-ascii85 PUBLIC . )
 
 add_executable( base85 base85.c )
 target_link_libraries( base85 PUBLIC encode-ascii85 )
-
